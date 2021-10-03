@@ -1,5 +1,4 @@
 class Student(name:String,age:Int,GPA:Double){
-
     var name = name
     var age = age
     var GPA = GPA
