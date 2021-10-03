@@ -29,13 +29,21 @@ The Kotlin assignment has one component:
 
 ### Q1 = what dose Race Conditions mean
 ###
-###
+when two or more threads access same variable 
+and try to change it at the same time 
 ###
 ### Q2 = is there any Race Conditions in the code
 ###
-###
-###
+yes {println(weapon.name)} here the weapon might change while printing it 
 ### Q3 = what's the best way to solve the compiling error in the code using scopeFunction
 ###
-###
+ scope function deals with variable's copy (it or this), not 
+the variable itself so the interference won't occur 
+
+the solution 
+fun printWeaponName() {
+weapon?.also{
+ println(it.name)}
+  }
+
 ###
