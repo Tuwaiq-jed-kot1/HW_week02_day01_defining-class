@@ -28,14 +28,19 @@ The Kotlin assignment has one component:
 > ##### }
 
 ### Q1 = what dose Race Conditions mean
+>A race condition is an undesirable situation that occurs when a device or system attempts to perform two or more operations at the same time, but because of the nature of the device or system,
+
+>###the operations must be done in the proper sequence to be done correctly.
 ###
 ###
 ###
 ### Q2 = is there any Race Conditions in the code
-###
-###
+># Yes,
+>###if (weapon != null) {
+> ##### println(weapon.name)
+> ##### }
 ###
 ### Q3 = what's the best way to solve the compiling error in the code using scopeFunction
-###
+>you can solution by all mehtods scope function 'without (with)'
 ###
 ###
