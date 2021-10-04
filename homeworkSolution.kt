@@ -11,7 +11,7 @@ and give the student abilty to (speake hint:use print ) and the abilty to add tw
 
 class Student {
     var name:String = "Sami"
-    var age = 0
+    var age = 1
         get() = (18..65).random()
     var intGPA:Int=0
         get() = (60..100).start
