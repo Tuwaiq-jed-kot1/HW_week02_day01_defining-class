@@ -28,14 +28,16 @@ The Kotlin assignment has one component:
 > ##### }
 
 ### Q1 = what dose Race Conditions mean
-###
-###
+race condition occurs when two (or more) threads are operating on the same data at the same time, 
+meaning a thread could end up using stale data
 ###
 ### Q2 = is there any Race Conditions in the code
 ###
-###
+ yes, becuase there is a possibility  of weapon being null betweeen the time check passesd and and the time the name is printed. the compiler balks becouse it cannot
 ###
 ### Q3 = what's the best way to solve the compiling error in the code using scopeFunction
-###
+fun printWeaponName() {
+weapon?.also{
+println(it.name)}}
 ###
 ###
